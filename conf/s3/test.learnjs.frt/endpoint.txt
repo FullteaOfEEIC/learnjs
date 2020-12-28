@@ -1,0 +1,1 @@
+http://test.learnjs.frt.s3-website-us-east-1.amazonaws.com
