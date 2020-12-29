@@ -15,5 +15,12 @@ learnjs.showView = function(hash){
 learnjs.problemView = function(problemNumber){
 	var title = "Problem #" + problemNumber + " Coming Soon..."
 	var problemView = $("<div class=\"problem-view\">").text(title);
-	return problemView
+	return problemView;
+}
+
+learnjs.appOnReady = function(){
+	window.onhashchange=function(){
+		learnjs.showView(window.location.hash);
+	};
+	learnjs.showView(window.location.hash);
 }
